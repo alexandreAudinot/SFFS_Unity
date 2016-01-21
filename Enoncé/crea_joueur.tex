@@ -1,10 +1,10 @@
 Nous allons maintenant nous intéresser à la création d'une voiture contrôlable par l'utilisateur. Cette voiture pourra avancer et tourner, et la caméra sera positionnée à l'arrière.
 
 \begin{enumerate}
-\item Complétez le script appliquant des forces vers l'avant ou l'arrière du véhicule en fonction des touches enfoncées. Le squelette du script est fourni dans \textit{Assets/Scripts/PlayerControl.cs}.
-\item Ajoutez le script à l'objet \textit{Player} en le faisant glisser dans l'inspecteur lorsque \textit{Player} est sélectionné. N'hésitez pas à tester votre script (clic sur le bouton play en haut de l'aperçu) !
+\item Le squelette du script que vous allez développer est fourni dans \textit{Assets/Scripts/MovementController.cs}. Ajoutez-le à l'objet \textit{Player} en le faisant glisser dans l'inspecteur lorsque \textit{Player} est sélectionné. 
+\item Complétez le script appliquant des forces vers l'avant ou l'arrière du véhicule en fonction des touches enfoncées. Indice : vous pourrez utiliser les fonctions de \textit{RigidBody} : \textit{Addforce} et \textit{AddRelativeForce} (Voir les liens vers la doc en fin de document). N'hésitez pas à tester votre script (clic sur le bouton play en haut de l'aperçu) !
 \item Ajoutez la gestion des rotations au script précédent.
-\item Ajoutez des attributs publiques au script afin de modifier la vitesse de déplacement et de rotation facilement. Ces attributs seront visibles et modifiables directement depuis l'éditeur. (optionnel)
+\item Ajoutez des attributs publiques au script afin de pouvoir modifier la vitesse de déplacement et de rotation facilement. Ces attributs seront visibles et modifiables directement depuis l'inspecteur. (optionnel)
 \item Faites en sorte que la caméra suive le véhicule. Pour cela, vous pourrez la déplacer dans l'arborescence pour qu'elle soit un enfant du véhicule.
 \item Ajoutez des lumières directionnelles (spotlight) enfant du véhicule afin de modéliser les phares. (optionnel)
 \end{enumerate}
